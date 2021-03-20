@@ -45,7 +45,7 @@ gulp.task('watch', function () {
     gulp.watch('app/css/**/*.scss', gulp.parallel('scss'));
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch(['app/js/**/*.js', 'app/libs/**/*.js'], gulp.parallel('scripts'))
-})
+}) 
 gulp.task('img', function () {
     return gulp.src('app/img/**/*')
         .pipe(cache(imagemin({
