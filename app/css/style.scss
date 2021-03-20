@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+$black: #1A1A1A;
+$grey: #A8A8A8;
+$white: #F7F7F7;
+
+body {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .main__ad-line {
+            height: 45px;
+            background: #CED3CA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            mix-blend-mode: overlay;
+
+            .ad-line__button {
+                width: 113px;
+                height: 28px;
+                text-align: center;
+                background: $black;
+                border: 1px solid $black;
+                outline: none;
+                cursor: pointer;
+                color: $white;
+                margin: 0 15px;                
+            }
+
+        }
+        nav {
+            display: flex;
+            align-items: center; 
+            padding: 0 125px;
+            box-sizing: border-box; 
+
+            .nav__h1 {
+                font-size: 3.5em;
+                text-transform: uppercase;
+                user-select: none;
+                height: 115px;
+                display: flex;
+                align-items: center;
+            }
+            .nav__group-of-links {
+                margin-left: 70px;
+                width: 340px;
+                display: flex;
+                justify-content: space-around;
+
+                .group-of-links__link {
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 17px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .nav__group-of-my-office {
+                display: flex;
+                width: 265px;   
+                margin-left: auto;
+                justify-content: space-between;
+                .group-of-my-office__link {
+                    color: $black;
+                    text-decoration: none;
+                    font-size: 17px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .group-of-my-office__dividing-line {
+                    border-right: 1px solid $black;
+                    margin: 0 -55px;
+                }
+                .group-of-my-office__basket-button {
+                    background: transparent;
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+
+                    .basket-button__icon {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            .nav__end-of-nav-line {
+                width: 1px;
+                height: 117px;
+                background: $black;
+                margin-left: 35px;
+            }
+        }
+    }
+}
