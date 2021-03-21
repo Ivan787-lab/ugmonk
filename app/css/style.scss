@@ -69,7 +69,7 @@ body {
                         width: 0;
                         height: 1px;
                         background: $black;
-                        transition: .5s width;
+                        transition: 0.5s width;
                         align-self: center;
                     }
 
@@ -98,7 +98,7 @@ body {
                         width: 0;
                         height: 1px;
                         background: $black;
-                        transition: .5s width;
+                        transition: 0.5s width;
                         align-self: center;
                     }
 
@@ -145,24 +145,41 @@ body {
             .banner__learn-more {
                 margin-left: 10%;
                 color: $white;
+                text-decoration: none;
+                width: max-content;
+                display: flex;
+                flex-direction: column;
+
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    background: $white;
+                    transition: 0.5s width;
+                    align-self: center;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
             }
         }
         .main__clothes-container {
-            height: 2510px;
+            height: max-content;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 90%;
-            border: 1px solid #000;
             margin-top: 15px;
             align-self: center;
 
             .clothes-container__nav {
-                border: 1px solid #000;
                 width: 70%;
                 display: flex;
                 justify-content: space-evenly;
-                padding: 20px;
+                padding: 45px;
                 box-sizing: border-box;
 
                 .nav__setings-link_default {
@@ -177,7 +194,7 @@ body {
                         width: 0;
                         height: 1px;
                         background: $grey;
-                        transition: .5s width;
+                        transition: 0.5s width;
                         align-self: center;
                     }
 
@@ -195,11 +212,108 @@ body {
                         width: 100%;
                         height: 1px;
                         background: $black;
-                        transition: .5s width;
+                        transition: 0.5s width;
                     }
                 }
                 .nav__setings-link_disabled {
                     color: $grey;
+                }
+            }
+            .clothes-container__products {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 75%;
+                justify-content: space-around;
+                .products__card-of-product {
+                    width: 275px;
+                    height: 420px;
+                    user-select: none;
+                    cursor: pointer;
+
+                    .card-of-product__name-of-product {
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: $black;
+                        margin-top: 5px;
+                    }
+                    .card-of-product__prices {
+                        margin-top: 5px;
+                        font-size: 15px;
+
+                        .prices__price-without-discount {
+                            color: $grey;
+                            margin-right: 5px;
+                        }
+                        .prices__price-with-discount {
+                            color: #FF3451;
+                        }
+                    }
+                }
+            }
+        }
+        .main__discont-banner {
+            background: #CED3CA;
+            width: 100%;
+            height: 660px;
+            padding: 75px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .discount-banner__body-of-banner {
+                background-color: $white;
+                width: 1180px;
+                height: 406px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+
+                .body-of-banner__text-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 490px;
+
+                    .text-title__p {
+                        font-size: 38px;
+                        line-height: 46px;
+                        margin-bottom: 50px;
+                        width: 208px;
+                        color: $black;
+                    }
+                    .title__shop-the-sale {
+                        text-decoration: none;
+                        color: $black;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: -90px;
+            
+                        &::after {
+                            content: "";
+                            width: 0;
+                            height: 1px;
+                            background: $black;
+                            transition: 0.5s width;
+                            align-self: center;
+                        }
+    
+                        &:hover {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+    
+                    }
+                }
+
+                .body-of-banner__bg-with-clothes {
+                    background: url('../img/clothes.jpg') center no-repeat;
+                    background-size: cover;
+                    width: 704px;
+                    height: 406px;
                 }
             }
         }
