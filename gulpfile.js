@@ -47,7 +47,7 @@ gulp.task('watch', function () {
     gulp.watch(['app/js/**/*.js', 'app/libs/**/*.js'], gulp.parallel('scripts'))
 }) 
 gulp.task('img', function () {
-    return gulp.src('app/img/**/*')
+    return gulp.src(['app/img/**/*' , 'app/img/clothes/**/*'])
         .pipe(cache(imagemin({
             interlaced: true,
             progressive: true,
