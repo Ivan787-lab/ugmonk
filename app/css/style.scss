@@ -32,15 +32,15 @@ body {
                 outline: none;
                 cursor: pointer;
                 color: $white;
-                margin: 0 15px;                
+                margin: 0 15px;
             }
 
         }
-        nav {
+        .main__nav {
             display: flex;
-            align-items: center; 
+            align-items: center;
             padding: 0 125px;
-            box-sizing: border-box; 
+            box-sizing: border-box;
 
             .nav__h1 {
                 font-size: 3.5em;
@@ -49,6 +49,7 @@ body {
                 height: 115px;
                 display: flex;
                 align-items: center;
+                cursor: pointer;
             }
             .nav__group-of-links {
                 margin-left: 70px;
@@ -60,15 +61,28 @@ body {
                     color: $black;
                     text-decoration: none;
                     font-size: 17px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background: $black;
+                        transition: .5s width;
+                        align-self: center;
+                    }
 
                     &:hover {
-                        text-decoration: underline;
+                        &::after {
+                            width: 100%;
+                        }
                     }
                 }
             }
             .nav__group-of-my-office {
                 display: flex;
-                width: 265px;   
+                width: 265px;
                 margin-left: auto;
                 justify-content: space-between;
                 .group-of-my-office__link {
@@ -76,9 +90,24 @@ body {
                     text-decoration: none;
                     font-size: 17px;
 
-                    &:hover {
-                        text-decoration: underline;
+                    display: flex;
+                    flex-direction: column;
+
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background: $black;
+                        transition: .5s width;
+                        align-self: center;
                     }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+
                 }
                 .group-of-my-office__dividing-line {
                     border-right: 1px solid $black;
@@ -103,7 +132,7 @@ body {
             }
         }
         .main__banner {
-            background: url(../img/banner.jpg) center no-repeat;
+            background: url('../img/banner.jpg') center no-repeat;
             width: 100%;
             height: 600px;
             background-size: cover;
@@ -115,7 +144,63 @@ body {
             }
             .banner__learn-more {
                 margin-left: 10%;
-                color:  $white;
+                color: $white;
+            }
+        }
+        .main__clothes-container {
+            height: 2510px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            border: 1px solid #000;
+            margin-top: 15px;
+            align-self: center;
+
+            .clothes-container__nav {
+                border: 1px solid #000;
+                width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 20px;
+                box-sizing: border-box;
+
+                .nav__setings-link_default {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    width: max-content;
+                    color: $grey;
+
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background: $grey;
+                        transition: .5s width;
+                        align-self: center;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+
+                }
+                .nav__setings-link_active {
+                    color: $black !important;
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        background: $black;
+                        transition: .5s width;
+                    }
+                }
+                .nav__setings-link_disabled {
+                    color: $grey;
+                }
             }
         }
     }
