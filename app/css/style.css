@@ -393,3 +393,125 @@ body main {
         background-size: cover;
         width: 704px;
         height: 406px; }
+  body main .main__our-mission {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: #F8F6F2; }
+    body main .main__our-mission .our-mission__title {
+      width: 630px;
+      font-size: 30px;
+      margin: 0 auto;
+      margin-top: 90px;
+      font-weight: 400; }
+    body main .main__our-mission .our-mission__shop-blocks {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin-top: 50px; }
+      body main .main__our-mission .our-mission__shop-blocks .our-mission__shop-block {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0 80px; }
+        body main .main__our-mission .our-mission__shop-blocks .our-mission__shop-block .shop-block__img {
+          width: 522px;
+          height: 647px;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none; }
+        body main .main__our-mission .our-mission__shop-blocks .our-mission__shop-block .shop-block__link {
+          text-decoration: none;
+          color: #1A1A1A;
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          body main .main__our-mission .our-mission__shop-blocks .our-mission__shop-block .shop-block__link::after {
+            content: "";
+            width: 0;
+            height: 1px;
+            background: #1A1A1A;
+            -webkit-transition: 0.5s width;
+            -o-transition: 0.5s width;
+            transition: 0.5s width; }
+          body main .main__our-mission .our-mission__shop-blocks .our-mission__shop-block .shop-block__link:hover::after {
+            width: 110%; }
+    body main .main__our-mission .our-mission__shop-objects {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 50px; }
+      body main .main__our-mission .our-mission__shop-objects .shop-objects__img {
+        width: 1210px;
+        height: 657px;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+      body main .main__our-mission .our-mission__shop-objects .shop-objects__link {
+        text-decoration: none;
+        color: #1A1A1A;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center; }
+        body main .main__our-mission .our-mission__shop-objects .shop-objects__link::after {
+          content: "";
+          width: 0;
+          height: 1px;
+          background: #1A1A1A;
+          -webkit-transition: 0.5s width;
+          -o-transition: 0.5s width;
+          transition: 0.5s width; }
+        body main .main__our-mission .our-mission__shop-objects .shop-objects__link:hover::after {
+          width: 110%; }

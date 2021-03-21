@@ -317,5 +317,94 @@ body {
                 }
             }
         }
+        .main__our-mission {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: #F8F6F2;
+
+            .our-mission__title {
+                width: 630px;
+                font-size: 30px;
+                margin: 0 auto;
+                margin-top: 90px;
+                font-weight: 400;                
+            }
+            .our-mission__shop-blocks {
+                display: flex;
+                align-self: center;
+                margin-top: 50px;
+                .our-mission__shop-block {
+                    width: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 80px;
+    
+                    .shop-block__img {
+                        width: 522px;
+                        height: 647px;
+                        user-select: none;
+                    }
+                    .shop-block__link {
+                        text-decoration: none;
+                        color: $black;
+                        width: max-content;
+                        display: flex;
+                        flex-direction: column;
+    
+                        &::after {
+                            content: "";
+                            width: 0;
+                            height: 1px;
+                            background: $black;
+                            transition: 0.5s width;
+                        }
+    
+                        &:hover {
+                            &::after {
+                                width: 110%;
+                            }
+                        }
+    
+                    }
+                }
+    
+            }
+            .our-mission__shop-objects {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .shop-objects__img {
+                    width: 1210px;
+                    height: 657px;
+                    align-self: center;
+                    user-select: none;
+                }
+                .shop-objects__link {
+                    text-decoration: none;
+                    color: $black;
+                    width: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        background: $black;
+                        transition: 0.5s width;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 110%;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }
